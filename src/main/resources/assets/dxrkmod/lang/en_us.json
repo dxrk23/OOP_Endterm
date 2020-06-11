@@ -1,3 +1,12 @@
 {
-	"item.dxrkmod.test_item" : "Ilyas Loh"
+	"item.dxrkmod.test_item" : "Topaz gem",
+	
+	"item.dxrkmod.topaz_sword" : "Topaz Sword",
+	"item.dxrkmod.topaz_axe" : "Topaz Axe",
+	"item.dxrkmod.topaz_pickaxe" : "Topaz Pickaxe",
+	"item.dxrkmod.topaz_shovel" : "Topaz Shovel",
+	"item.dxrkmod.topaz_hoe" : "Topaz Hoe",
+	
+	"block.dxrkmod.topaz_ore"  : "Topaz ore"
+	
 }

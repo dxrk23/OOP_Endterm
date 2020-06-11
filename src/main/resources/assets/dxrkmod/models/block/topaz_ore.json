@@ -1,0 +1,6 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "dxrkmod:blocks/topaz_ore"
+	}
+}
