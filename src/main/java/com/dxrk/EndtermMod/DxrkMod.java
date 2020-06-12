@@ -8,7 +8,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("dxrkmod")
@@ -33,13 +32,8 @@ public class DxrkMod {
 	}
 
 	@SubscribeEvent
-	public void onServerStarting(FMLServerStartingEvent event) {
-
-	}
-
-	@SubscribeEvent
 	public static void loadCompleteEvent(FMLLoadCompleteEvent event) {
-		TopazOreGen.generatrOre();
+		TopazOreGen.generateOre();
 	}
 
 }

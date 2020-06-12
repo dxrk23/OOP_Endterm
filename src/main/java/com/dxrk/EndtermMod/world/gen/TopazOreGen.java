@@ -12,9 +12,10 @@ import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class TopazOreGen {
-	public static void generatrOre() {
+	public static void generateOre() {
 		for (Biome biome : ForgeRegistries.BIOMES) {
-			ConfiguredPlacement CustomConfig = Placement.COUNT_RANGE.configure(new CountRangeConfig(30, 10, 0, 100));
+			ConfiguredPlacement<CountRangeConfig> CustomConfig = Placement.COUNT_RANGE
+					.configure(new CountRangeConfig(30, 10, 0, 100));
 			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
 					Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE,
 							BlockInit.topaz_ore.getDefaultState(), 8)).withPlacement(CustomConfig));

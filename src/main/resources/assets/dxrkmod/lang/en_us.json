@@ -1,5 +1,6 @@
 {
 	"item.dxrkmod.test_item" : "Topaz gem",
+	"item.dxrkmod.ruby_gem" : "Ruby gem",
 	
 	"item.dxrkmod.topaz_sword" : "Topaz Sword",
 	"item.dxrkmod.topaz_axe" : "Topaz Axe",
@@ -7,6 +8,13 @@
 	"item.dxrkmod.topaz_shovel" : "Topaz Shovel",
 	"item.dxrkmod.topaz_hoe" : "Topaz Hoe",
 	
-	"block.dxrkmod.topaz_ore"  : "Topaz ore"
+	"item.dxrkmod.ruby_sword" : "Ruby Sword",
+	"item.dxrkmod.ruby_axe" : "Ruby Axe",
+	"item.dxrkmod.ruby_pickaxe" : "Ruby Pickaxe",
+	"item.dxrkmod.ruby_shovel" : "Ruby Shovel",
+	"item.dxrkmod.ruby_hoe" : "Ruby Hoe",
+	
+	"block.dxrkmod.topaz_ore"  : "Topaz ore",
+	"block.dxrkmod.ruby_ore"  : "Ruby ore"
 	
 }

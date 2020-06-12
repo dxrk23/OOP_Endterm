@@ -19,18 +19,28 @@ import net.minecraftforge.registries.ObjectHolder;
 @Mod.EventBusSubscriber(modid = DxrkMod.Mod_id, bus = Bus.MOD)
 public class BlockInit {
 	public static final Block topaz_ore = null;
+	public static final Block ruby_ore = null;
 
 	@SubscribeEvent
 	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
 		event.getRegistry()
-				.register(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.7f, 15.0f)
-						.sound(SoundType.STONE).harvestLevel(3).harvestTool(ToolType.PICKAXE)).setRegistryName("topaz_ore"));
+				.register(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3f, 15.0f)
+						.sound(SoundType.STONE).harvestLevel(3).harvestTool(ToolType.PICKAXE))
+								.setRegistryName("topaz_ore"));
+		event.getRegistry()
+				.register(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3f, 15.0f)
+						.sound(SoundType.STONE).harvestLevel(3).harvestTool(ToolType.PICKAXE))
+								.setRegistryName("ruby_ore"));
+
 	}
 
 	@SubscribeEvent
 	public static void registerBlockItem(final RegistryEvent.Register<Item> event) {
-		event.getRegistry().register(
-				new BlockItem(topaz_ore, new Item.Properties().maxStackSize(64).group(ItemGroup.DECORATIONS))
+		event.getRegistry()
+				.register(new BlockItem(topaz_ore, new Item.Properties().maxStackSize(64).group(ItemGroup.BUILDING_BLOCKS))
 						.setRegistryName("topaz_ore"));
+		event.getRegistry()
+				.register(new BlockItem(ruby_ore, new Item.Properties().maxStackSize(64).group(ItemGroup.BUILDING_BLOCKS))
+						.setRegistryName("ruby_ore"));
 	}
 }

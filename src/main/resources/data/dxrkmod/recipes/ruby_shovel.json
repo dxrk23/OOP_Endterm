@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "dxrkmod:ruby_gem"
+    }
+  },
+  "result": {
+    "item": "dxrkmod:ruby_shovel"
+  }
+}
