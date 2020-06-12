@@ -12,12 +12,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod("dxrkmod")
 public class DxrkMod {
 	public static final String Mod_id = "dxrkmod";
-	public static DxrkMod instance;
 
 	public DxrkMod() {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-		instance = this;
 
 		MinecraftForge.EVENT_BUS.register(this);
 	}
