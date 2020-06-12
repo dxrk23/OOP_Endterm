@@ -2,7 +2,7 @@
 
 * This mod add Topaz ore and Topaz Tools into the game
 
-## Up-date , added Ruby ore and Tools
+## Update 1.1, added Ruby ore and Tools
 
 ![](screenshots/screen1.png)
 ![](screenshots/screen2.png)
