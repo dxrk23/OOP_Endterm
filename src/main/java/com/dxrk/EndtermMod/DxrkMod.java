@@ -1,5 +1,6 @@
 package com.dxrk.EndtermMod;
 
+import com.dxrk.EndtermMod.world.gen.RubyOreGen;
 import com.dxrk.EndtermMod.world.gen.TopazOreGen;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -34,6 +35,7 @@ public class DxrkMod {
 	@SubscribeEvent
 	public static void loadCompleteEvent(FMLLoadCompleteEvent event) {
 		TopazOreGen.generateOre();
+		RubyOreGen.generateOre();
 	}
 
 }
